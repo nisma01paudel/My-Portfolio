@@ -3,30 +3,31 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
 
-//dotenv configuartion
+// dotenv configuration
 dotenv.config();
 
-//rest object
+// rest object
 const app = express();
 
-//midlewares
+// middlewares
 app.use(cors());
 app.use(express.json());
 
-// static files access
+// serve static files
 app.use(express.static(path.join(__dirname, "./client/build")));
 
-//routes
+// API routes
 app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
 
-app.get("/*", (req, res) => {
+// Catch-all route for React (works with Express v5 / path-to-regexp v6)
+app.get("/:catchAll(*)", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
-//port
+// port
 const PORT = process.env.PORT || 8080;
 
-//listen
+// listen
 app.listen(PORT, () => {
-  console.log(`Server Runnning On PORT ${PORT} `);
+  console.log(`Server Running On PORT ${PORT}`);
 });
