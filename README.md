@@ -2,7 +2,7 @@
 
 A personal portfolio website built with **React (Create React App) and Node/Express backend**, showcasing projects, tech stack, education, and work experience.  
 
-**Live site:** [https://paudelnisma.com.np](www.paudelnisma.com.np)
+**Live site:** [https://paudelnisma.com.np](https:/paudelnisma.com.np)
 
 ---
 
