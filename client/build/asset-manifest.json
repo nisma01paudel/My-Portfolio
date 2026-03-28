@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.10e31e03.css",
+    "main.js": "/static/js/main.14509727.js",
+    "static/js/453.eca5f793.chunk.js": "/static/js/453.eca5f793.chunk.js",
+    "static/media/Nisma-Paudel-Resume.pdf": "/static/media/Nisma-Paudel-Resume.40763107ab089a5cbc2c.pdf",
+    "index.html": "/index.html",
+    "main.10e31e03.css.map": "/static/css/main.10e31e03.css.map",
+    "main.14509727.js.map": "/static/js/main.14509727.js.map",
+    "453.eca5f793.chunk.js.map": "/static/js/453.eca5f793.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10e31e03.css",
+    "static/js/main.14509727.js"
+  ]
+}
