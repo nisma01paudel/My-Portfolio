@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, "./client/build")));
 app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
 
 // Catch-all route for React (works with Express v5 / path-to-regexp v6)
-app.get("/:catchAll(*)", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
